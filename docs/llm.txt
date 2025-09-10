@@ -2553,154 +2553,6 @@ Note that parts of the gearbox will also always contribute to the inertia. We
 neglected gearbox's own inertia and energy losses in the above for simplicity.
 
 
-# Exercises
-URL: /docs/exercises
-
-Exercises description
-
-***
-
-title: Exercises
-description: Exercises description
-----------------------------------
-
-# Introduction
-
-Here is the collection of 41 problems to solve. The problems are independent
-from each other so in principle you can start from any of them. However, the
-problems are grouped in a special way: the first 22 problems are focused on the
-main system components - machines and converters - and the system behavior, and
-then the remaining problems present the four application areas (pumps,
-conveyors, turbines and winches/winders). So, is it recommended first to learn
-more about the components and systems and then work with the applications.
-
-To solve the problems you need to run *DriveConstructor* and, if you are new to
-this online course, use the Texbook.
-
-# User's guide
-
-### Main page
-
-#### What is on the main page
-
-Look through the textbook and the exercise book before you start.
-
-For starting press "Select" button.
-
-**Image: Drive Constructor interface Description: Screenshot of Drive Constructor welcome page with navigation instructions and application overview. The interface shows the main application areas including pumps, conveyors, wind/tidal mills, and winches with explanatory annotations.**
-
-#### Tips
-
-Right-click on the "Exercizes" menu and choose "Open Link in New Tab". Do the
-same for "Textbook". Then you can have both software and the books available on
-the three open pages in you browser.
-
-**Image: Browser context menu Description: Screenshot showing browser context menu with various link options including 'Open Link in New Tab' and 'Inspect Element'. The image demonstrates typical web browser functionality for navigation.**
-
-### Page "Select topology for your system"
-
-Select one of the four proposed topologies by pressing the respective "New
-system" button. Only two topologies are taken as examples below. The ways of
-working with all the topologies are identical.
-
-### Page "Drive train with just variable speed drive"
-
-The main principle of DriveConstructor is that the user sets up some parameters
-of the components and the software chooses suitable component candidates from
-catalogues and presents them to the user (the catalogues are not possible to see
-in this version of DriveConstructor).
-
-**Image: System parameter interface Description: Drive Constructor interface showing system parameter input with load curve visualization. The screenshot demonstrates how to define pump parameters and shows the resulting torque-speed characteristics with explanatory annotations.**
-
-Sometimes the software proposes two candidates for some component. Then it is
-necessary to choose one of them by checking the checkbox in the first column.
-
-**Image: Frequency converter selection Description: Table showing frequency converter candidates with specifications including price, power ratings, voltages, and mounting options. The interface displays detailed technical parameters for component selection with wall and floor mounting variants highlighted.**
-
-### Page "Drive train with voltage step down"
-
-Transformer is a very important component taking the grid voltage down to the
-level desired for the frequency converter and the machine.
-
-**Image: Transformer configuration interface Description: Drive Constructor interface showing transformer parameter settings with voltage step-down configuration. The screenshot demonstrates transformer sizing with explanatory annotations about voltage level definition.**
-
-By default the voltage on LV side of transformer is 650-700 V. You can choose
-this to some other level as shown below. Transformer ratio recalculates
-automatically. You can adjust the ratio by setting different "tappings".
-
-**Image: Transformer tapping interface Description: Drive Constructor interface showing transformer tapping options with voltage adjustment settings. The screenshot displays dropdown menus for tapping selection and explains how transformer parameters affect the drive system.**
-
-When choosing types of frequency converter and winding type of transformer, make
-sure lines on the icons match each other. Avoid situations where e.g.
-transformer with 3-winding is connected to frequency converter destined for
-2-winding transformer...
-
-**Image: Transformer topology selection Description: Drive Constructor interface showing different transformer winding configurations (3-winding, 2Q-2L-VSC-12p). The screenshot demonstrates various transformer types and their applications in drive systems.**
-
-The first two topologies above are wrong and only the third one is correct!
-
-Note that all parameters in "System" table of the report are for system as the
-whole, meaning for example the price is sum of prices of all components, the
-efficiency is product of efficiencies of all components, etc.
-
-**Image: Complete system report Description: Drive Constructor comprehensive system report showing all component specifications and system parameters. The report displays detailed technical data for transformer, frequency converter, and electric machine with highlighted system parameters.**
-
-### Benchmarking of systems
-
-When the report is generated as shown below, it is possible to save the system
-(all system's parameters) in "My Systems" for comparison with other system
-variants. Follow the following steps:
-
-##### STEP 1. Press "Save system"
-
-**Image: System report generation Description: Drive Constructor report page showing complete system specifications including transformer, frequency converter, and electric machine details. The interface displays comprehensive technical data and component images with save functionality highlighted.**
-
-##### STEP 2. Choose some name for the system and press "Save system"
-
-Then your system gets saved in "My systems" under the given name.
-
-**Image: System save dialog Description: Drive Constructor save dialog showing system naming interface with save options. The screenshot demonstrates how to save designed systems for benchmarking and comparison purposes.**
-
-##### STEP 3. Open "My systems"
-
-Here you can see key parameters of the saved system:
-
-**Image: My systems overview Description: Drive Constructor 'My systems' page showing saved system list with efficiency metrics and specifications. The interface displays system comparison data including price, efficiency at different loads, volume, and other key parameters.**
-
-To benchmark systems one needs at least two of them. To set parameters of the
-second system the user should go through the main page of DriveConstructor as
-described in the next steps.
-
-##### STEP 4. Press on "DriveConstructor" in the upper left corner
-
-**Image: System report view Description: Drive Constructor report page showing complete system analysis with component specifications and technical details. The interface displays system parameters, transformer details, frequency converter specifications, and electric machine data with navigation highlighted.**
-
-You come to the main page.
-
-##### STEP 5. Choose the application you are working on ("Pumps" in our case)
-
-##### STEP 6. Choose the system topology for the second system
-
-**Image: System selection interface Description: Drive Constructor interface showing system selection with checkboxes for multiple systems comparison. The screenshot demonstrates how to select systems for comparative analysis with comparison functionality highlighted.**
-
-##### STEP 7. Configure the system by setting all the parameters and save it in "My systems" the same way as you did for the first system
-
-##### STEP 8. Open "My systems"
-
-##### STEP 9. To benchmark the two systems, check both boxes under "Select" and press "Compare"
-
-**Image: System comparison table Description: Drive Constructor comparison table showing two systems (system1 and system2) with detailed performance metrics. The table displays efficiency, price, volume, footprint, weight, and THD values for comprehensive system evaluation.**
-
-Then the graph appear as below:
-
-**Image: System comparison radar Description: Drive Constructor radar chart comparing two systems across multiple parameters including price, efficiency, THD, weight, footprint, and volume. The chart provides visual representation of system performance trade-offs.**
-
-Use feedback form for any comments, proposals and reporting problems to the
-course developers
-
-**Image: Feedback form interface Description: Drive Constructor feedback form showing fields for problem reporting and file attachment capabilities. The interface allows users to submit bug reports and technical issues to the development team.**
-
-
 # Electric machines
 URL: /docs/exercises/electric-machines
 
@@ -3925,3 +3777,151 @@ Typical situation is given:
 Design drive train so that the wire does not collapse. To find the answer try to
 dimension the drive train using several gearbox and machine combinations. Check
 if the wire would collapse in each design variant.
+
+
+# Exercises
+URL: /docs/exercises
+
+Exercises description
+
+***
+
+title: Exercises
+description: Exercises description
+----------------------------------
+
+# Introduction
+
+Here is the collection of 41 problems to solve. The problems are independent
+from each other so in principle you can start from any of them. However, the
+problems are grouped in a special way: the first 22 problems are focused on the
+main system components - machines and converters - and the system behavior, and
+then the remaining problems present the four application areas (pumps,
+conveyors, turbines and winches/winders). So, is it recommended first to learn
+more about the components and systems and then work with the applications.
+
+To solve the problems you need to run *DriveConstructor* and, if you are new to
+this online course, use the Texbook.
+
+# User's guide
+
+### Main page
+
+#### What is on the main page
+
+Look through the textbook and the exercise book before you start.
+
+For starting press "Select" button.
+
+**Image: Drive Constructor interface Description: Screenshot of Drive Constructor welcome page with navigation instructions and application overview. The interface shows the main application areas including pumps, conveyors, wind/tidal mills, and winches with explanatory annotations.**
+
+#### Tips
+
+Right-click on the "Exercizes" menu and choose "Open Link in New Tab". Do the
+same for "Textbook". Then you can have both software and the books available on
+the three open pages in you browser.
+
+**Image: Browser context menu Description: Screenshot showing browser context menu with various link options including 'Open Link in New Tab' and 'Inspect Element'. The image demonstrates typical web browser functionality for navigation.**
+
+### Page "Select topology for your system"
+
+Select one of the four proposed topologies by pressing the respective "New
+system" button. Only two topologies are taken as examples below. The ways of
+working with all the topologies are identical.
+
+### Page "Drive train with just variable speed drive"
+
+The main principle of DriveConstructor is that the user sets up some parameters
+of the components and the software chooses suitable component candidates from
+catalogues and presents them to the user (the catalogues are not possible to see
+in this version of DriveConstructor).
+
+**Image: System parameter interface Description: Drive Constructor interface showing system parameter input with load curve visualization. The screenshot demonstrates how to define pump parameters and shows the resulting torque-speed characteristics with explanatory annotations.**
+
+Sometimes the software proposes two candidates for some component. Then it is
+necessary to choose one of them by checking the checkbox in the first column.
+
+**Image: Frequency converter selection Description: Table showing frequency converter candidates with specifications including price, power ratings, voltages, and mounting options. The interface displays detailed technical parameters for component selection with wall and floor mounting variants highlighted.**
+
+### Page "Drive train with voltage step down"
+
+Transformer is a very important component taking the grid voltage down to the
+level desired for the frequency converter and the machine.
+
+**Image: Transformer configuration interface Description: Drive Constructor interface showing transformer parameter settings with voltage step-down configuration. The screenshot demonstrates transformer sizing with explanatory annotations about voltage level definition.**
+
+By default the voltage on LV side of transformer is 650-700 V. You can choose
+this to some other level as shown below. Transformer ratio recalculates
+automatically. You can adjust the ratio by setting different "tappings".
+
+**Image: Transformer tapping interface Description: Drive Constructor interface showing transformer tapping options with voltage adjustment settings. The screenshot displays dropdown menus for tapping selection and explains how transformer parameters affect the drive system.**
+
+When choosing types of frequency converter and winding type of transformer, make
+sure lines on the icons match each other. Avoid situations where e.g.
+transformer with 3-winding is connected to frequency converter destined for
+2-winding transformer...
+
+**Image: Transformer topology selection Description: Drive Constructor interface showing different transformer winding configurations (3-winding, 2Q-2L-VSC-12p). The screenshot demonstrates various transformer types and their applications in drive systems.**
+
+The first two topologies above are wrong and only the third one is correct!
+
+Note that all parameters in "System" table of the report are for system as the
+whole, meaning for example the price is sum of prices of all components, the
+efficiency is product of efficiencies of all components, etc.
+
+**Image: Complete system report Description: Drive Constructor comprehensive system report showing all component specifications and system parameters. The report displays detailed technical data for transformer, frequency converter, and electric machine with highlighted system parameters.**
+
+### Benchmarking of systems
+
+When the report is generated as shown below, it is possible to save the system
+(all system's parameters) in "My Systems" for comparison with other system
+variants. Follow the following steps:
+
+##### STEP 1. Press "Save system"
+
+**Image: System report generation Description: Drive Constructor report page showing complete system specifications including transformer, frequency converter, and electric machine details. The interface displays comprehensive technical data and component images with save functionality highlighted.**
+
+##### STEP 2. Choose some name for the system and press "Save system"
+
+Then your system gets saved in "My systems" under the given name.
+
+**Image: System save dialog Description: Drive Constructor save dialog showing system naming interface with save options. The screenshot demonstrates how to save designed systems for benchmarking and comparison purposes.**
+
+##### STEP 3. Open "My systems"
+
+Here you can see key parameters of the saved system:
+
+**Image: My systems overview Description: Drive Constructor 'My systems' page showing saved system list with efficiency metrics and specifications. The interface displays system comparison data including price, efficiency at different loads, volume, and other key parameters.**
+
+To benchmark systems one needs at least two of them. To set parameters of the
+second system the user should go through the main page of DriveConstructor as
+described in the next steps.
+
+##### STEP 4. Press on "DriveConstructor" in the upper left corner
+
+**Image: System report view Description: Drive Constructor report page showing complete system analysis with component specifications and technical details. The interface displays system parameters, transformer details, frequency converter specifications, and electric machine data with navigation highlighted.**
+
+You come to the main page.
+
+##### STEP 5. Choose the application you are working on ("Pumps" in our case)
+
+##### STEP 6. Choose the system topology for the second system
+
+**Image: System selection interface Description: Drive Constructor interface showing system selection with checkboxes for multiple systems comparison. The screenshot demonstrates how to select systems for comparative analysis with comparison functionality highlighted.**
+
+##### STEP 7. Configure the system by setting all the parameters and save it in "My systems" the same way as you did for the first system
+
+##### STEP 8. Open "My systems"
+
+##### STEP 9. To benchmark the two systems, check both boxes under "Select" and press "Compare"
+
+**Image: System comparison table Description: Drive Constructor comparison table showing two systems (system1 and system2) with detailed performance metrics. The table displays efficiency, price, volume, footprint, weight, and THD values for comprehensive system evaluation.**
+
+Then the graph appear as below:
+
+**Image: System comparison radar Description: Drive Constructor radar chart comparing two systems across multiple parameters including price, efficiency, THD, weight, footprint, and volume. The chart provides visual representation of system performance trade-offs.**
+
+Use feedback form for any comments, proposals and reporting problems to the
+course developers
+
+**Image: Feedback form interface Description: Drive Constructor feedback form showing fields for problem reporting and file attachment capabilities. The interface allows users to submit bug reports and technical issues to the development team.**
